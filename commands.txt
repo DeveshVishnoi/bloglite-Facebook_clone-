@@ -1,0 +1,20 @@
+##cd to project
+cd /mnt/d/new_mad2  
+
+## start redis server on windows
+sudo service redis-server start  #####                      first  step
+
+## start beat in windows
+celery -A app.celery beat --max-interval 1 -l info          third
+
+## start worker in ubuntu
+celery -A main.celery worker -l info                        fourth
+
+  
+
+## mailhog server
+ip = ip addr              // to get ip of wsl        if host will work then no use 
+ip:8025                                                     otherwise use this
+ 
+
+sudo service redis-server stop
