@@ -49,7 +49,7 @@
           <div class="column-u" v-for="(user, index) in users" :key="index">
             
                 <div class="cards">
-                    <img :src="user.dp[0].dp_name" alt="Avatar" style="" v-if="user.dp[0].dp_name">
+                    <img :src="user.dp[0]?.dp_name" alt="Avatar" style="" v-if="user.dp[0].dp_name">
                     <div class="container-u">
                         <router-link :to="'/' + user.user_id + '/profile_frnd'" style="text-decoration: none; color: rgb(7, 7, 171); "><h4><b>{{user.firstname}} {{user.lastname}}</b></h4> </router-link>
                       
