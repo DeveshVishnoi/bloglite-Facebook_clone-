@@ -97,7 +97,7 @@ export default{
             user_id:JSON.parse(localStorage.getItem('user_info')).user_id,
             username:JSON.parse(localStorage.getItem("user_info")).firstname + " " + JSON.parse(localStorage.getItem("user_info")).lastname,
             users:[],
-            link:"http://127.0.0.1:5000"
+            link:"https://devbook-t6cy.onrender.com"
         }
     },
     methods:{
@@ -133,7 +133,7 @@ export default{
         },
         folloow(id){
             console.log(id);
-                fetch(`http://127.0.0.1:5000/follow/${this.user_id}` , {
+                fetch(`${this.link}/follow/${this.user_id}` , {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -171,7 +171,7 @@ export default{
 
 	} ,
     unfolloow(id){
-		fetch(`http://127.0.0.1:5000/unfollow/${this.user_id}` , {
+		fetch(`${this.link}/unfollow/${this.user_id}` , {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
