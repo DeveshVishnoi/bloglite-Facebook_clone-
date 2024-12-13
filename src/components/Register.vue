@@ -98,7 +98,7 @@ export default {
     data(){
 
       return {
-        link:"https://devbook-t6cy.onrender.com/",
+        link:"https://devbook-t6cy.onrender.com",
         email_id:"",
         password:"",
         user_id:"",
