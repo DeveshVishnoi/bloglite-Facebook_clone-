@@ -245,7 +245,7 @@ export default{
             myfollowerslength:"",
             myfollowedlength:"",
 			posts:[],
-			link:"http://127.0.0.1:5000"
+			link:"https://devbook-t6cy.onrender.com"
 		}
 	}
 	,
@@ -274,7 +274,7 @@ export default{
 			.catch((err) => this.$router.replace({ name: "Login" }));
 		},
 		del_post(id) {
-      fetch(`http://127.0.0.1:5000/api/${this.user_id}/${id}`, {
+      fetch(`https://devbook-t6cy.onrender.com/api/${this.user_id}/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -311,7 +311,7 @@ export default{
 		this.$router.push({ name: "hello" });
 	},
 	follow(){
-		fetch(`http://127.0.0.1:5000/myfollow/${this.user_id}` , {
+		fetch(`https://devbook-t6cy.onrender.com/myfollow/${this.user_id}` , {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -348,7 +348,7 @@ export default{
 
 	} ,
 	followed(){
-		fetch(`http://127.0.0.1:5000/myfollowed/${this.user_id}` , {
+		fetch(`https://devbook-t6cy.onrender.com/myfollowed/${this.user_id}` , {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
