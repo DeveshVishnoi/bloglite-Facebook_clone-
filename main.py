@@ -28,12 +28,12 @@ from application.models import *
 
 
 celery=celery
-CELERY_BROKER_URL="redis://127.0.0.1:6379/1"
-CELERY_RESULT_BACKEND="redis://127.0.0.1:6379/2"
+CELERY_BROKER_URL="redis://0.0.0.0:6379/1"
+CELERY_RESULT_BACKEND="redis://0.0.0.0:6379/2"
 
 celery.conf.update(
-    broker_url="redis://127.0.0.1:6379/1",
-    result_backend="redis://127.0.0.1:6379/2",
+    broker_url="redis://0.0.0.0:6379/1",
+    result_backend="redis://0.0.0.0:6379/2",
     timezone="Asia/Kolkata"
 )
 
@@ -44,5 +44,5 @@ celery.Task = ContextTask
 
 if __name__ == "__main__":
     db.create_all()
-    app.run()
+    app.run(host='0.0.0.0', port=5001)
     
