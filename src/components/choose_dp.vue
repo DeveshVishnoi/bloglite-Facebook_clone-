@@ -66,7 +66,7 @@
 export default {
   data() {
     return {
-      link:"http://127.0.0.1:5000/",
+      link:"https://devbook-t6cy.onrender.com",
       imageurl: null,
       user_id:JSON.parse(localStorage.getItem("user_info")).user_id,
       email_id:JSON.parse(localStorage.getItem("user_info")).email_id
