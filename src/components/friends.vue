@@ -197,7 +197,7 @@ export default {
       users: [],
       my_following: [],
       my_follower: [],
-      link: "http://127.0.0.1:5000",
+      link: "https://devbook-t6cy.onrender.com",
     };
   },
   methods: {
@@ -232,7 +232,7 @@ export default {
     },
     folloow(id) {
       console.log(id);
-      fetch(`http://127.0.0.1:5000/follow/${this.user_id}`, {
+      fetch(`https://devbook-t6cy.onrender.com/follow/${this.user_id}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -265,7 +265,7 @@ export default {
         .catch((err) => console.log(err));
     },
     unfolloow(id) {
-      fetch(`http://127.0.0.1:5000/unfollow/${this.user_id}`, {
+      fetch(`https://devbook-t6cy.onrender.com/unfollow/${this.user_id}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -306,7 +306,7 @@ export default {
       this.$router.push({ path: `/${name.value}/search_user` });
     },
     followers() {
-      fetch(`http://127.0.0.1:5000/myfollowername/${this.user_id}`, {
+      fetch(`https://devbook-t6cy.onrender.com/myfollowername/${this.user_id}`, {
         method: "GET",
         headers: {
           sar_babu: localStorage.getItem("token"),
@@ -331,7 +331,7 @@ export default {
         .catch((err) => console.log(err));
     },
     following() {
-      fetch(`http://127.0.0.1:5000/myfollowingname/${this.user_id}`, {
+      fetch(`https://devbook-t6cy.onrender.com/myfollowingname/${this.user_id}`, {
         method: "GET",
         headers: {
           sar_babu: localStorage.getItem("token"),
