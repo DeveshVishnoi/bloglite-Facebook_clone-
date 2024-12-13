@@ -98,7 +98,7 @@ export default {
     data(){
 
       return {
-        link:"http://127.0.0.1:5000/",
+        link:"https://devbook-t6cy.onrender.com/",
         email_id:"",
         password:"",
         user_id:"",
