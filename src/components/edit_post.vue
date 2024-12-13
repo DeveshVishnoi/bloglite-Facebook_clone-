@@ -85,7 +85,7 @@ export default {
     name:'edit_post',
     data(){
      return {
-       link:"http://127.0.0.1:5000",
+       link:"https://devbook-t6cy.onrender.com",
        user_id:JSON.parse(localStorage.getItem("user_info")).user_id,
        imageurl :"",
        post_id:this.$route.params.post_id,
