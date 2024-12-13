@@ -33,7 +33,7 @@ export default {
     return {
       email_id:"",
       password:"",
-      link:"https://devbook-t6cy.onrender.com/"
+      link:"https://devbook-t6cy.onrender.com"
     }
   },
   methods:{
