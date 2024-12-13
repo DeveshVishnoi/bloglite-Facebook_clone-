@@ -2,8 +2,8 @@
   <div>
     <div class="header">
       <div class="header__left">
-        <img src="./log.svg"
-            alt="" />
+        <img src="/src/assets/log.svg"
+
         <div class="header__input">
           <span class="material-icons"> search </span>
           <input type="text" placeholder="Search Facebook" id="search_name" />

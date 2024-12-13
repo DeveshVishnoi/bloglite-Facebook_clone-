@@ -4,7 +4,7 @@
         <div class="header">
             <div class="header__left">
                 <img
-            src="src\assets\ok.png"
+            src="/src/assets/images.jfif"
                     alt=""
                 />
               <div class="header__input">
