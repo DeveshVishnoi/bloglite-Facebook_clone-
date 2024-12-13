@@ -3,7 +3,7 @@
     <header></header>
     <div class="header">
       <div class="header__left">
-        <img src="src\assets\images.jfif" alt="" />
+        <img src="src\assets\ok.png" alt="" />
         <div class="header__input">
           <span class="material-icons"> search </span>
           <input type="text" placeholder="Search Facebook" id="search_name" />
